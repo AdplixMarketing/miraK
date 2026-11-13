@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200"><defs>
+<filter id="brush" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.02 0.03" numOctaves="3" seed="9"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="11"/><feColorMatrix values="0 0 0 0 0.25  0 0 0 0 0.16  0 0 0 0 0.05  0 0 0 0.9 -0.3"/></filter>
+<radialGradient id="gold" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#E7C66B"/><stop offset="1" stop-color="#B98A2E"/></radialGradient></defs>
+<rect width="900" height="1200" fill="#6E2A1C"/>
+<rect x="51" y="51" width="798" height="1098" fill="url(#gold)"/>
+<g filter="url(#brush)">
+<circle cx="450" cy="375" r="192" fill="none" stroke="#6E2A1C" stroke-width="10.5"/>
+<circle cx="450" cy="375" r="180" fill="#DDB550"/>
+<path d="M75 1149C90 705 255 585 360 558L540 558C645 585 810 705 825 1149Z" fill="#1F3A5C"/>
+<path d="M345 1149C354 780 405 630 450 570C495 630 546 780 555 1149Z" fill="#9B2D20"/>
+<ellipse cx="450" cy="393" rx="93" ry="120" fill="#B9854F"/>
+<path d="M345 375C345 240 555 240 555 375C510 307.5 390 307.5 345 375Z" fill="#3A2A22"/>
+</g>
+<rect width="900" height="1200" filter="url(#grain)" opacity=".5"/>
+<text x="834" y="1131" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#fff" opacity=".7">Sample artwork</text></svg>

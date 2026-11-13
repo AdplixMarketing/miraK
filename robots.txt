@@ -1,0 +1,4 @@
+# Preview site with sample content: keep it out of search engines until launch.
+# At launch, replace both lines below with:  User-agent: *  /  Allow: /
+User-agent: *
+Disallow: /

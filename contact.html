@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Mira K</title>
+<meta name="description" content="Send a message to Mira K about a painting or a print.">
+<meta property="og:title" content="Contact | Mira K">
+<meta property="og:description" content="Send a message to Mira K about a painting or a print.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className = "js";</script>
+</head>
+<body>
+<p class="preview" hidden>Preview site. The artwork, prices and text shown here are samples.</p>
+<header class="wrap site-head">
+  <a class="wordmark" href="index.html" data-artist>Mira K</a>
+  <nav class="site-nav" aria-label="Main"><a href="index.html">Gallery</a><a href="paintings.html">Paintings</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a></nav>
+</header>
+<main>
+
+<section class="wrap page-head narrow">
+  <h1>Contact</h1>
+  <p class="muted" id="contact-lead" style="margin-top:1rem">Ask about a painting, a print size or shipping. You will get a reply by email.</p>
+  <form id="contact-form" novalidate style="margin-top:2rem">
+    <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error"><p class="field-error" id="name-error" hidden></p></div>
+    <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error"><p class="field-error" id="email-error" hidden></p></div>
+    <div class="field"><label for="message">Message</label><textarea id="message" name="message" aria-describedby="message-error"></textarea><p class="field-error" id="message-error" hidden></p></div>
+    <div class="visually-hidden" aria-hidden="true"><label for="website">Leave this empty</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+    <button class="button" type="submit">Send message</button>
+    <p class="form-status" id="form-status" role="status"></p>
+  </form>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-row">
+    <p>&copy; <span data-year>2026</span> <span data-artist>Mira K</span>. All artwork is the artist's own.</p>
+    <nav aria-label="Footer"><a href="paintings.html">Paintings</a><a href="policies.html">Shipping and returns</a><a href="contact.html">Contact</a><a href="#" data-instagram hidden rel="noopener">Instagram</a></nav>
+  </div>
+</footer>
+<script src="data/works.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

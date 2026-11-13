@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mira K | Gallery</title>
+<meta name="description" content="Walk through the gallery of Mira K: landscapes, portraits and icons, with originals and prints for sale directly from the artist.">
+<meta property="og:title" content="Mira K | Gallery">
+<meta property="og:description" content="Walk through the gallery of Mira K: landscapes, portraits and icons, with originals and prints for sale directly from the artist.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className = "js";</script>
+</head>
+<body class="is-gallery">
+<p class="preview" hidden>Preview site. The artwork, prices and text shown here are samples.</p>
+<header class="wrap site-head">
+  <a class="wordmark" href="index.html" data-artist>Mira K</a>
+  <nav class="site-nav" aria-label="Main"><a href="index.html" aria-current="page">Gallery</a><a href="paintings.html">Paintings</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</header>
+<main>
+
+<h1 class="visually-hidden">Mira K gallery</h1>
+<section class="gallery" aria-label="Walk-through gallery">
+  <canvas id="gallery-canvas" tabindex="0" aria-label="3D gallery room. Drag or use the left and right arrow keys to look around. The paintings in this room are listed after the room buttons."></canvas>
+  <div class="gallery-veil" aria-hidden="true"></div>
+  <p class="gallery-loading">Loading the gallery</p>
+  <p class="gallery-hint">Drag to look around. Click a painting or a doorway.</p>
+  <div class="gallery-panel" hidden>
+    <h2></h2>
+    <p class="gallery-panel-meta muted"></p>
+    <div class="gallery-panel-price price"></div>
+    <div class="gallery-panel-actions"><a class="button" href="paintings.html">View painting</a><button class="button button--quiet gallery-panel-close" type="button">Step back</button></div>
+  </div>
+  <nav class="gallery-rooms" aria-label="Rooms"></nav>
+  <p class="visually-hidden gallery-status" role="status"></p>
+  <ul class="visually-hidden gallery-list" aria-label="Paintings in this room"></ul>
+  <div class="gallery-flat">
+    <h2>The gallery</h2>
+    <p class="muted">The 3D rooms could not start in this browser. Every painting is also on one page.</p>
+    <a class="button" href="paintings.html">See all paintings</a>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-row">
+    <p>&copy; <span data-year>2026</span> <span data-artist>Mira K</span>. All artwork is the artist's own.</p>
+    <nav aria-label="Footer"><a href="paintings.html">Paintings</a><a href="policies.html">Shipping and returns</a><a href="contact.html">Contact</a><a href="#" data-instagram hidden rel="noopener">Instagram</a></nav>
+  </div>
+</footer>
+<script src="data/works.js"></script>
+<script src="script.js"></script>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}</script>
+<script type="module" src="gallery.js"></script>
+</body>
+</html>

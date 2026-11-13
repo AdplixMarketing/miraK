@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paintings | Mira K</title>
+<meta name="description" content="Browse original paintings and prints by Mira K: landscapes, portraits and icons.">
+<meta property="og:title" content="Paintings | Mira K">
+<meta property="og:description" content="Browse original paintings and prints by Mira K: landscapes, portraits and icons.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className = "js";</script>
+</head>
+<body>
+<p class="preview" hidden>Preview site. The artwork, prices and text shown here are samples.</p>
+<header class="wrap site-head">
+  <a class="wordmark" href="index.html" data-artist>Mira K</a>
+  <nav class="site-nav" aria-label="Main"><a href="index.html">Gallery</a><a href="paintings.html" aria-current="page">Paintings</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</header>
+<main>
+
+<section class="wrap page-head">
+  <h1>Paintings</h1>
+  <div class="filters">
+    <div class="filter-set" role="group" aria-label="Show">
+      <button class="filter" type="button" data-filter="All" aria-pressed="true">All</button>
+      <button class="filter" type="button" data-filter="Landscapes" aria-pressed="false">Landscapes</button>
+      <button class="filter" type="button" data-filter="Portraits" aria-pressed="false">Portraits</button>
+      <button class="filter" type="button" data-filter="Icons" aria-pressed="false">Icons</button>
+    </div>
+    <label class="check"><input type="checkbox" id="only-available"> Original still available</label>
+  </div>
+</section>
+<section class="wrap">
+  <div class="grid" id="all-works" aria-live="polite"></div>
+  <div class="empty" id="no-works" hidden><p>No paintings match those choices.</p><button class="button button--quiet" type="button" id="show-all">Show all paintings</button></div>
+  <noscript><p>Turn on JavaScript to see the paintings, or <a href="contact.html">get in touch</a>.</p></noscript>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-row">
+    <p>&copy; <span data-year>2026</span> <span data-artist>Mira K</span>. All artwork is the artist's own.</p>
+    <nav aria-label="Footer"><a href="paintings.html">Paintings</a><a href="policies.html">Shipping and returns</a><a href="contact.html">Contact</a><a href="#" data-instagram hidden rel="noopener">Instagram</a></nav>
+  </div>
+</footer>
+<script src="data/works.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
